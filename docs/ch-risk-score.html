@@ -21,10 +21,10 @@
   <meta name="twitter:description" content="Chapter 18 Risk Scoring for UC UAS activity | UC UAS Policy Guidance Document" />
   
 
-<meta name="author" content="Dr. Brandon Stark" />
+<meta name="author" content="Dr. Brandon Stark, University of California" />
 
 
-<meta name="date" content="2020-06-05" />
+<meta name="date" content="2020-06-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -52,6 +52,68 @@
 
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -207,43 +269,55 @@
 <li class="chapter" data-level="20" data-path="ch-request.html"><a href="ch-request.html"><i class="fa fa-check"></i><b>20</b> Example Flight Request Information</a></li>
 <li class="chapter" data-level="21" data-path="ch-example-terms.html"><a href="ch-example-terms.html"><i class="fa fa-check"></i><b>21</b> Example Terms of Approval</a></li>
 <li class="chapter" data-level="22" data-path="ch-example-denial.html"><a href="ch-example-denial.html"><i class="fa fa-check"></i><b>22</b> Example Denial Template</a></li>
-<li class="chapter" data-level="23" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html"><i class="fa fa-check"></i><b>23</b> UAS Policy Full Text</a><ul>
-<li class="chapter" data-level="23.1" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#policy-statement"><i class="fa fa-check"></i><b>23.1</b> Policy Statement</a></li>
-<li class="chapter" data-level="23.2" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#complianceresponsibilities"><i class="fa fa-check"></i><b>23.2</b> Compliance/Responsibilities</a><ul>
-<li class="chapter" data-level="23.2.1" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#executive-officer-or-their-designees-are-responsible-for"><i class="fa fa-check"></i><b>23.2.1</b> Executive Officer or their designees are responsible for:</a></li>
-<li class="chapter" data-level="23.2.2" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#the-university-of-california-office-of-the-president-ucop-environment-health-safety-ehs-executive-director-is-responsible-for"><i class="fa fa-check"></i><b>23.2.2</b> The University of California Office of the President (UCOP) Environment, Health &amp; Safety (EH&amp;S) Executive Director is responsible for:</a></li>
-<li class="chapter" data-level="23.2.3" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#the-refsda-is-responsible-for"><i class="fa fa-check"></i><b>23.2.3</b> The (ref:SDA) is responsible for:</a></li>
-<li class="chapter" data-level="23.2.4" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#the-refab-is-responsible-for"><i class="fa fa-check"></i><b>23.2.4</b> The (ref:AB) is responsible for:</a></li>
-<li class="chapter" data-level="23.2.5" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#a-refdla-if-assigned-by-an-executive-officer-or-hisher-designee-is-responsible-for"><i class="fa fa-check"></i><b>23.2.5</b> A (ref:DLA) (if assigned by an Executive Officer or his/her designee) is responsible for:</a></li>
-<li class="chapter" data-level="23.2.6" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#operators-of-uas-are-responsible-for"><i class="fa fa-check"></i><b>23.2.6</b> Operators of UAS are responsible for:</a></li>
+<li class="chapter" data-level="23" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html"><i class="fa fa-check"></i><b>23</b> Core Competencies</a><ul>
+<li class="chapter" data-level="23.1" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#terms-and-definitions"><i class="fa fa-check"></i><b>23.1</b> Terms and Definitions</a><ul>
+<li class="chapter" data-level="23.1.1" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#user-groups"><i class="fa fa-check"></i><b>23.1.1</b> User Groups</a></li>
+<li class="chapter" data-level="23.1.2" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#domains-of-competency"><i class="fa fa-check"></i><b>23.1.2</b> Domains of Competency</a></li>
+<li class="chapter" data-level="23.1.3" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#knowledge-scale"><i class="fa fa-check"></i><b>23.1.3</b> Knowledge Scale</a></li>
+<li class="chapter" data-level="23.1.4" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#proficiency-ratings"><i class="fa fa-check"></i><b>23.1.4</b> Proficiency Ratings</a></li>
 </ul></li>
-<li class="chapter" data-level="23.3" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#required-procedures"><i class="fa fa-check"></i><b>23.3</b> Required Procedures</a><ul>
-<li class="chapter" data-level="23.3.1" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#general-procedures"><i class="fa fa-check"></i><b>23.3.1</b> General Procedures</a></li>
-<li class="chapter" data-level="23.3.2" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#registration-of-uas"><i class="fa fa-check"></i><b>23.3.2</b> Registration of UAS</a></li>
-<li class="chapter" data-level="23.3.3" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#liability-insurance"><i class="fa fa-check"></i><b>23.3.3</b> Liability Insurance</a></li>
-<li class="chapter" data-level="23.3.4" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#export-control"><i class="fa fa-check"></i><b>23.3.4</b> Export Control</a></li>
+<li class="chapter" data-level="23.2" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#general-user"><i class="fa fa-check"></i><b>23.2</b> General User</a></li>
+<li class="chapter" data-level="23.3" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#power-user"><i class="fa fa-check"></i><b>23.3</b> Power User</a></li>
+<li class="chapter" data-level="23.4" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#uas-flight-instructor"><i class="fa fa-check"></i><b>23.4</b> UAS Flight Instructor</a></li>
+<li class="chapter" data-level="23.5" data-path="ch-core-competencies.html"><a href="ch-core-competencies.html#uas-activity-reviewer"><i class="fa fa-check"></i><b>23.5</b> UAS Activity Reviewer</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html"><i class="fa fa-check"></i><b>24</b> UAS Policy Full Text</a><ul>
+<li class="chapter" data-level="24.1" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#policy-statement"><i class="fa fa-check"></i><b>24.1</b> Policy Statement</a></li>
+<li class="chapter" data-level="24.2" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#complianceresponsibilities"><i class="fa fa-check"></i><b>24.2</b> Compliance/Responsibilities</a><ul>
+<li class="chapter" data-level="24.2.1" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#executive-officer-or-their-designees-are-responsible-for"><i class="fa fa-check"></i><b>24.2.1</b> Executive Officer or their designees are responsible for:</a></li>
+<li class="chapter" data-level="24.2.2" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#the-university-of-california-office-of-the-president-ucop-environment-health-safety-ehs-executive-director-is-responsible-for"><i class="fa fa-check"></i><b>24.2.2</b> The University of California Office of the President (UCOP) Environment, Health &amp; Safety (EH&amp;S) Executive Director is responsible for:</a></li>
+<li class="chapter" data-level="24.2.3" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#the-refsda-is-responsible-for"><i class="fa fa-check"></i><b>24.2.3</b> The (ref:SDA) is responsible for:</a></li>
+<li class="chapter" data-level="24.2.4" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#the-refab-is-responsible-for"><i class="fa fa-check"></i><b>24.2.4</b> The (ref:AB) is responsible for:</a></li>
+<li class="chapter" data-level="24.2.5" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#a-refdla-if-assigned-by-an-executive-officer-or-hisher-designee-is-responsible-for"><i class="fa fa-check"></i><b>24.2.5</b> A (ref:DLA) (if assigned by an Executive Officer or his/her designee) is responsible for:</a></li>
+<li class="chapter" data-level="24.2.6" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#operators-of-uas-are-responsible-for"><i class="fa fa-check"></i><b>24.2.6</b> Operators of UAS are responsible for:</a></li>
+</ul></li>
+<li class="chapter" data-level="24.3" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#required-procedures"><i class="fa fa-check"></i><b>24.3</b> Required Procedures</a><ul>
+<li class="chapter" data-level="24.3.1" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#general-procedures"><i class="fa fa-check"></i><b>24.3.1</b> General Procedures</a></li>
+<li class="chapter" data-level="24.3.2" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#registration-of-uas"><i class="fa fa-check"></i><b>24.3.2</b> Registration of UAS</a></li>
+<li class="chapter" data-level="24.3.3" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#liability-insurance"><i class="fa fa-check"></i><b>24.3.3</b> Liability Insurance</a></li>
+<li class="chapter" data-level="24.3.4" data-path="ch-policy-full-text.html"><a href="ch-policy-full-text.html#export-control"><i class="fa fa-check"></i><b>24.3.4</b> Export Control</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="24" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html"><i class="fa fa-check"></i><b>24</b> UAS Regulations in Detail</a><ul>
-<li class="chapter" data-level="24.1" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#s-part107"><i class="fa fa-check"></i><b>24.1</b> 14 CFR 107 - SMALL UNMANNED AIRCRAFT SYSTEMS</a><ul>
-<li class="chapter" data-level="24.1.1" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#operator-requirements"><i class="fa fa-check"></i><b>24.1.1</b> Operator Requirements</a></li>
-<li class="chapter" data-level="24.1.2" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#aircraft-requirements-ss-aircraft"><i class="fa fa-check"></i><b>24.1.2</b> Aircraft Requirements {ss-aircraft}</a></li>
-<li class="chapter" data-level="24.1.3" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#airspace-requirements"><i class="fa fa-check"></i><b>24.1.3</b> Airspace Requirements</a></li>
-<li class="chapter" data-level="24.1.4" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#operating-limitations"><i class="fa fa-check"></i><b>24.1.4</b> Operating Limitations</a></li>
+<li class="chapter" data-level="25" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html"><i class="fa fa-check"></i><b>25</b> UAS Regulations in Detail</a><ul>
+<li class="chapter" data-level="25.1" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#s-part107"><i class="fa fa-check"></i><b>25.1</b> 14 CFR 107 - SMALL UNMANNED AIRCRAFT SYSTEMS</a><ul>
+<li class="chapter" data-level="25.1.1" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#operator-requirements"><i class="fa fa-check"></i><b>25.1.1</b> Operator Requirements</a></li>
+<li class="chapter" data-level="25.1.2" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#ss-aircraft"><i class="fa fa-check"></i><b>25.1.2</b> Aircraft Requirements</a></li>
+<li class="chapter" data-level="25.1.3" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#airspace-requirements"><i class="fa fa-check"></i><b>25.1.3</b> Airspace Requirements</a></li>
+<li class="chapter" data-level="25.1.4" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#operating-limitations"><i class="fa fa-check"></i><b>25.1.4</b> Operating Limitations</a></li>
 </ul></li>
-<li class="chapter" data-level="24.2" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#s-recreation"><i class="fa fa-check"></i><b>24.2</b> Exception for Limited Recreational Operations of Unmanned Aircraft</a><ul>
-<li class="chapter" data-level="24.2.1" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#definition-of-hobby-or-recreational-use"><i class="fa fa-check"></i><b>24.2.1</b> Definition of Hobby or Recreational Use</a></li>
-<li class="chapter" data-level="24.2.2" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#use-of-unmanned-aircraft-systems-at-institutions-of-higher-education"><i class="fa fa-check"></i><b>24.2.2</b> Use of Unmanned Aircraft Systems at Institutions of Higher Education</a></li>
-<li class="chapter" data-level="24.2.3" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#definition-of-community-based-organization-set-of-safety-guidelines"><i class="fa fa-check"></i><b>24.2.3</b> Definition of Community-based organization set of safety guidelines</a></li>
+<li class="chapter" data-level="25.2" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#s-recreation"><i class="fa fa-check"></i><b>25.2</b> Exception for Limited Recreational Operations of Unmanned Aircraft</a><ul>
+<li class="chapter" data-level="25.2.1" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#definition-of-hobby-or-recreational-use"><i class="fa fa-check"></i><b>25.2.1</b> Definition of Hobby or Recreational Use</a></li>
+<li class="chapter" data-level="25.2.2" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#use-of-unmanned-aircraft-systems-at-institutions-of-higher-education"><i class="fa fa-check"></i><b>25.2.2</b> Use of Unmanned Aircraft Systems at Institutions of Higher Education</a></li>
+<li class="chapter" data-level="25.2.3" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#definition-of-community-based-organization-set-of-safety-guidelines"><i class="fa fa-check"></i><b>25.2.3</b> Definition of Community-based organization set of safety guidelines</a></li>
 </ul></li>
-<li class="chapter" data-level="24.3" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#s-safety-code"><i class="fa fa-check"></i><b>24.3</b> Representative Safety Code</a></li>
+<li class="chapter" data-level="25.3" data-path="ch-UAS-regs-details.html"><a href="ch-UAS-regs-details.html#s-safety-code"><i class="fa fa-check"></i><b>25.3</b> Representative Safety Code</a></li>
 </ul></li>
-<li class="chapter" data-level="25" data-path="ch-resources.html"><a href="ch-resources.html"><i class="fa fa-check"></i><b>25</b> Additional Resources</a><ul>
-<li class="chapter" data-level="25.1" data-path="ch-resources.html"><a href="ch-resources.html#faa-resources"><i class="fa fa-check"></i><b>25.1</b> FAA Resources</a></li>
-<li class="chapter" data-level="25.2" data-path="ch-resources.html"><a href="ch-resources.html#uc-center-of-excellence-on-uas-safety"><i class="fa fa-check"></i><b>25.2</b> UC Center of Excellence on UAS Safety</a></li>
-<li class="chapter" data-level="25.3" data-path="ch-resources.html"><a href="ch-resources.html#regulations"><i class="fa fa-check"></i><b>25.3</b> Regulations</a></li>
+<li class="chapter" data-level="26" data-path="ch-resources.html"><a href="ch-resources.html"><i class="fa fa-check"></i><b>26</b> Additional Resources</a><ul>
+<li class="chapter" data-level="26.1" data-path="ch-resources.html"><a href="ch-resources.html#faa-resources"><i class="fa fa-check"></i><b>26.1</b> FAA Resources</a></li>
+<li class="chapter" data-level="26.2" data-path="ch-resources.html"><a href="ch-resources.html#uc-center-of-excellence-on-uas-safety"><i class="fa fa-check"></i><b>26.2</b> UC Center of Excellence on UAS Safety</a></li>
+<li class="chapter" data-level="26.3" data-path="ch-resources.html"><a href="ch-resources.html#regulations"><i class="fa fa-check"></i><b>26.3</b> Regulations</a></li>
 </ul></li>
-<li class="chapter" data-level="26" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>26</b> Glossary</a></li>
+<li class="chapter" data-level="27" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>27</b> Glossary</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>

@@ -37,10 +37,50 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={UC UAS Policy Guidance Document},
-  pdfauthor={Dr.~Brandon Stark},
+  pdfauthor={Dr.~Brandon Stark, University of California},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -77,10 +117,11 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
-
+\usepackage{array}
 
 \usepackage{tcolorbox}
-
+\usepackage{booktabs}
+\usepackage{longtable}
 
 
 \newtcolorbox{content-box}[2][]{
@@ -94,8 +135,8 @@
 \bibliographystyle{apalike}
 
 \title{UC UAS Policy Guidance Document}
-\author{Dr.~Brandon Stark}
-\date{2020-06-05}
+\author{Dr.~Brandon Stark, University of California}
+\date{2020-06-12}
 
 \begin{document}
 \maketitle
@@ -104,6 +145,12 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(kableExtra)}
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{preface}{%
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
@@ -132,8 +179,8 @@ Date & Rev & Notes\tabularnewline
 \midrule
 \endhead
 2018/01/26 & 1.0 & Initial Document\tabularnewline
-2018/07/01 & 1.1 & Revision\tabularnewline
-2020/07/01 & 2.0 & Moved Online\tabularnewline
+2018/07/01 & 1.1 & Fixed minor errors, updated Frequently Asked Questions, added new content\tabularnewline
+2020/07/01 & 2.0 & Moved Online, updated FAA regulations, and moved some items around to improve readability\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -2737,6 +2784,195 @@ Thank you for utilizing UC Drones to request a UAS flight. UAS flights are revie
 
 Rejection of a UAS operation is not limited to the list above, but serves to provide common cases for dismissal. Rejection may be a result of extenuating circumstances, compounding risks, or other factors that are not included on this list. This list may be subject to change in the future, due to changes in FAA law, campus policy, or local and state legislation. As such is important to consider these factors when submitting a flight request and attempt to address all non-listed concerns prior to submission.
 
+\hypertarget{ch-core-competencies}{%
+\chapter{Core Competencies}\label{ch-core-competencies}}
+
+There are four major categories of personnel associated with UAS, each with their own competency and knowledge requirements.
+
+These competencies are the measurable or observable knowledge, skills, abilities and behaviors that are essential for successful performance. This formalization of core competencies establishes the desired minimums for each user group and can be used as a roadmap for readers to assist in identifying their proficiency needs.
+
+\hypertarget{terms-and-definitions}{%
+\section{Terms and Definitions}\label{terms-and-definitions}}
+
+\hypertarget{user-groups}{%
+\subsection{User Groups}\label{user-groups}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{General User} - a RPIC who operates in exclusively low risk scenarios. A beginner, occasional operator or operates for only specific uses.
+\item
+  \textbf{Power User} - a RPIC who operates regularly in moderate to higher risk scenarios. A operator with significant UAS experience and may be tasked to a wide range of UAS activity.
+\item
+  \textbf{UAS Flight Instructor} - a RPIC who additionally provides occasional or regular flight instruction to others.\\
+\item
+  \textbf{UAS Flight Reviewer} - a UC staff member responsible for reviewing and approving UAS activity. This may include \protect\hyperlink{DLA}{Designated Local Authorities}, the \protect\hyperlink{SDA}{Systemwide Designated UAS Authority} or other staff member assigned review authority. In some cases, the responsibilities of a UAS Flight Reviewer may be distributed across subject matter experts.
+\end{itemize}
+
+\hypertarget{domains-of-competency}{%
+\subsection{Domains of Competency}\label{domains-of-competency}}
+
+The core competencies have been organized into four domains:
+
+\begin{itemize}
+\tightlist
+\item
+  UAS Regulations
+\item
+  Campus Procedures
+\item
+  Risk Management
+\item
+  UAS Flight Experience
+\end{itemize}
+
+\hypertarget{knowledge-scale}{%
+\subsection{Knowledge Scale}\label{knowledge-scale}}
+
+To clarify some of the language related to the aspect of knowing specific subject matter, the following scale is used.
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Is knowledgeable} - The subject matter is well understood by the user.
+\item
+  \emph{Is familiar} - The subject matter is familiar to the user to some level of detail.
+\item
+  \emph{Is aware} - The existence of the subject matter is known to the user and further details can be ascertained as necessary.
+\end{itemize}
+
+\hypertarget{proficiency-ratings}{%
+\subsection{Proficiency Ratings}\label{proficiency-ratings}}
+
+Within each rubric, users can rate their mastery of each identified competency. The rating scale is as follows:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  No proficiency
+\item
+  Limited proficiency
+\item
+  Somewhat proficient
+\item
+  Fully proficient
+\end{enumerate}
+
+\hypertarget{general-user}{%
+\section{General User}\label{general-user}}
+
+\begin{longtable}[t]{lll>{\raggedright\arraybackslash}p{25em}}
+\caption{\label{tab:unnamed-chunk-5}General User Core Competencies}\\
+\toprule
+Rating & Code & Domain & Description\\
+\midrule
+\_\_\_\_\_ & 1A1 & UAS Regulations & **Is aware** of the applicable federal regulations.\\
+\_\_\_\_\_ & 1A2 & UAS Regulations & **Is aware** of the registration requirement of an unmanned aircraft.\\
+\_\_\_\_\_ & 1A3 & UAS Regulations & **Is aware** of State or Local regulations.\\
+\_\_\_\_\_ & 1B1 & Campus Procedures & **Is aware** of the campus local policy or procedures.\\
+\_\_\_\_\_ & 1B2 & Campus Procedures & **Is aware** of UAS activity reporting requirements.\\
+\addlinespace
+\_\_\_\_\_ & 1C1 & Risk Management & Can identify major risks associated with specific UAS activity\\
+\_\_\_\_\_ & 1C2 & Risk Management & Can develop a basic mission plan for specific UAS activity\\
+\_\_\_\_\_ & 1C3 & Risk Management & **Is aware** of common potential safety risks.\\
+\_\_\_\_\_ & 1C4 & Risk Management & Can implement a field safety plan as applicable.\\
+\_\_\_\_\_ & 1D1 & Operational Experience & **Is aware** of the operation and use of specific unmanned aircraft.\\
+\addlinespace
+\_\_\_\_\_ & 1D2 & Operational Experience & Can implement UAS specific pre-flight inspections.\\
+\bottomrule
+\end{longtable}
+
+\hypertarget{power-user}{%
+\section{Power User}\label{power-user}}
+
+\begin{longtable}[t]{lll>{\raggedright\arraybackslash}p{25em}}
+\caption{\label{tab:unnamed-chunk-8}Power User Core Competencies}\\
+\toprule
+Rating & Code & Domain & Description\\
+\midrule
+\_\_\_\_\_ & 2A1 & UAS Regulations & **Is familiar** with the applicable federal regulations.\\
+\_\_\_\_\_ & 2A2 & UAS Regulations & **Is familiar** with the registration requirement of an unmanned aircraft.\\
+\_\_\_\_\_ & 2A3 & UAS Regulations & **Is familiar** of State or Local regulations.\\
+\_\_\_\_\_ & 2B1 & Campus Procedures & **Is familiar** with the campus local policy or procedures.\\
+\_\_\_\_\_ & 2B2 & Campus Procedures & **Is familiar** with UAS activity reporting requirements.\\
+\addlinespace
+\_\_\_\_\_ & 2B3 & Campus Procedures & Can coordinate and communicate across various campus stakeholders regarding the use of UAS.\\
+\_\_\_\_\_ & 2C1 & Risk Management & Can identify major risks associated with specific UAS activity\\
+\_\_\_\_\_ & 2C2 & Risk Management & Can develop an advanced mission plan for specific UAS activity\\
+\_\_\_\_\_ & 2C3 & Risk Management & **Is familiar** with common potential safety risks.\\
+\_\_\_\_\_ & 2C4 & Risk Management & Can prepare a field safety plan as applicable.\\
+\addlinespace
+\_\_\_\_\_ & 2C5 & Risk Management & Can identify potential risks to privacy, civil rights or liberties\\
+\_\_\_\_\_ & 2C6 & Risk Management & Can implement a risk management process.\\
+\_\_\_\_\_ & 2D1 & Operational Experience & **Is familiar** with the operation and use of specific unmanned aircraft.\\
+\_\_\_\_\_ & 2D2 & Operational Experience & Can implement UAS specific pre-flight inspections.\\
+\_\_\_\_\_ & 2D3 & Operational Experience & Can develop emergency action plans for off-nominal situations.\\
+\bottomrule
+\end{longtable}
+
+\hypertarget{uas-flight-instructor}{%
+\section{UAS Flight Instructor}\label{uas-flight-instructor}}
+
+\begin{longtable}[t]{lll>{\raggedright\arraybackslash}p{25em}}
+\caption{\label{tab:unnamed-chunk-11}Flight Instructor Core Competencies}\\
+\toprule
+Rating & Code & Domain & Description\\
+\midrule
+\_\_\_\_\_ & 3A1 & UAS Regulations & **Is knowledgeable** with the applicable federal regulations.\\
+\_\_\_\_\_ & 3A2 & UAS Regulations & **Is knowledgeable** with the registration requirement of an unmanned aircraft.\\
+\_\_\_\_\_ & 3A3 & UAS Regulations & **Is knowledgeable** of State or Local regulations.\\
+\_\_\_\_\_ & 3A4 & UAS Regulations & Can articulate UAS regulations effectively\\
+\_\_\_\_\_ & 3B1 & Campus Procedures & **Is knowledgeable** with the campus local policy or procedures.\\
+\addlinespace
+\_\_\_\_\_ & 3B2 & Campus Procedures & **Is knowledgeable** with UAS activity reporting requirements.\\
+\_\_\_\_\_ & 3B3 & Campus Procedures & Can coordinate and communicate across various campus stakeholders regarding the use of UAS.\\
+\_\_\_\_\_ & 3B4 & Campus Procedures & Can identify the communication chain of command for UAS activity at a University Location\\
+\_\_\_\_\_ & 3C1 & Risk Management & Can identify major risks associated with specific UAS activity\\
+\_\_\_\_\_ & 3C2 & Risk Management & Can develop an advanced mission plan for specific UAS activity\\
+\addlinespace
+\_\_\_\_\_ & 3C3 & Risk Management & **Is knowledgeable** with common potential safety risks.\\
+\_\_\_\_\_ & 3C4 & Risk Management & Can prepare a field safety plan as applicable.\\
+\_\_\_\_\_ & 3C5 & Risk Management & Can identify potential risks to privacy, civil rights or liberties\\
+\_\_\_\_\_ & 3C6 & Risk Management & Can implement a risk management process.\\
+\_\_\_\_\_ & 3C7 & Risk Management & Consistently demonstrates effective risk management for UAS activity\\
+\addlinespace
+\_\_\_\_\_ & 3D1 & Operational Experience & **Is knowledgeable** with the operation and use of a range unmanned aircraft.\\
+\_\_\_\_\_ & 3D2 & Operational Experience & Can implement a range of UAS pre-flight inspections.\\
+\_\_\_\_\_ & 3D3 & Operational Experience & Can develop emergency action plans for off-nominal situations.\\
+\_\_\_\_\_ & 3D4 & Operational Experience & Maintains a high level of UAS proficiency.\\
+\_\_\_\_\_ & 3D5 & Operational Experience & Is effective and convincing in promotion UAS safety.\\
+\bottomrule
+\end{longtable}
+
+\hypertarget{uas-activity-reviewer}{%
+\section{UAS Activity Reviewer}\label{uas-activity-reviewer}}
+
+\begin{longtable}[t]{lll>{\raggedright\arraybackslash}p{25em}}
+\caption{\label{tab:unnamed-chunk-14}UAS Flight Reviewer Core Competencies}\\
+\toprule
+Rating & Code & Domain & Description\\
+\midrule
+\_\_\_\_\_ & 4A1 & UAS Regulations & **Is knowledgeable** with the applicable federal regulations.\\
+\_\_\_\_\_ & 4A2 & UAS Regulations & **Is knowledgeable** with the registration requirement of an unmanned aircraft.\\
+\_\_\_\_\_ & 4A3 & UAS Regulations & **Is knowledgeable** of State or Local regulations.\\
+\_\_\_\_\_ & 4A4 & UAS Regulations & Can articulate UAS regulations effectively\\
+\_\_\_\_\_ & 4B1 & Campus Procedures & **Is knowledgeable** with the campus local policy or procedures.\\
+\addlinespace
+\_\_\_\_\_ & 4B2 & Campus Procedures & **Is knowledgeable** with UAS activity reporting requirements.\\
+\_\_\_\_\_ & 4B3 & Campus Procedures & Can coordinate and communicate across various campus stakeholders regarding the use of UAS.\\
+\_\_\_\_\_ & 4B4 & Campus Procedures & Can identify the communication chain of command for UAS activity at a University Location\\
+\_\_\_\_\_ & 4C1 & Risk Management & Can identify major risks associated with specific UAS activity\\
+\_\_\_\_\_ & 4C2 & Risk Management & **Is knowledgeable** with common potential safety risks.\\
+\addlinespace
+\_\_\_\_\_ & 4C3 & Risk Management & Can identify potential risks to privacy, civil rights or liberties\\
+\_\_\_\_\_ & 4C4 & Risk Management & Can implement a risk management process.\\
+\_\_\_\_\_ & 4C5 & Risk Management & Consistently demonstrates effective risk management for UAS activity\\
+\_\_\_\_\_ & 4D1 & Operational Experience & **Is familiar** with the general performance of common UAS models.\\
+\_\_\_\_\_ & 4D2 & Operational Experience & **Is familiar** with the general operation and logistical requirements of UAS activity.\\
+\bottomrule
+\end{longtable}
+
 \hypertarget{ch-policy-full-text}{%
 \chapter{UAS Policy Full Text}\label{ch-policy-full-text}}
 
@@ -3024,8 +3260,8 @@ The introduction of 14 CFR 107 enabled a wide range of small UAS usage under a s
   \end{itemize}
 \end{itemize}
 
-\hypertarget{aircraft-requirements-ss-aircraft}{%
-\subsection{Aircraft Requirements \{ss-aircraft\}}\label{aircraft-requirements-ss-aircraft}}
+\hypertarget{ss-aircraft}{%
+\subsection{Aircraft Requirements}\label{ss-aircraft}}
 
 \begin{itemize}
 \tightlist
