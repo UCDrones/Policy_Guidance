@@ -136,7 +136,7 @@
 
 \title{UC UAS Policy Guidance Document}
 \author{Dr.~Brandon Stark, University of California}
-\date{2020-06-12}
+\date{2020-06-30}
 
 \begin{document}
 \maketitle
@@ -1363,7 +1363,7 @@ Any \protect\hyperlink{UASactivity}{UAS activity} that is not approved by a \pro
 \hypertarget{ss-personally-owned-UAS-coverage}{%
 \subsection{Personally Owned Unmanned Aircraft Used for University Business}\label{ss-personally-owned-UAS-coverage}}
 
-The University of California has extended their UAS liability policy to enable coverage of UAS owned by UC students, staff or faculty used for \protect\hyperlink{UB}{University Business}, including research. Coverage in contingent on compliance with the policy and procedures on UAS usage. This coverage is not intended to cover student organizations or (ref:rdParty vendors or contractors.
+The University of California has extended their UAS liability policy to enable coverage of UAS owned by UC students, staff or faculty used for \protect\hyperlink{UB}{University Business}, including research. Coverage in contingent on compliance with the policy and procedures on UAS usage. This coverage is not intended to cover student organizations or (ref:3rdParty) vendors or contractors.
 
 \hypertarget{ss-campus-police-coverage}{%
 \subsection{Coverage for Campus Police}\label{ss-campus-police-coverage}}
@@ -1418,10 +1418,17 @@ To file a claim, contact your campus Risk Manager. Please prepare the following:
 
 \textbf{Ensure your coverage}
 
-• Attach a copy of your UAS invoice to your UAS registration in UC Drones
-• Make sure you file your Flight Requests
-• For recurrent or on-going activity, create a Project application but don't forget to add flights before you head out.
-• After an incident, make sure you take pictures of the damage and file a post-flight report. Add as much details as possible.
+\begin{itemize}
+\tightlist
+\item
+  Attach a copy of your UAS invoice to your UAS registration in UC Drones
+\item
+  Make sure you file your Flight Requests
+\item
+  For recurrent or on-going activity, create a Project application but don't forget to add flights before you head out.
+\item
+  After an incident, make sure you take pictures of the damage and file a post-flight report. Add as much details as possible.
+\end{itemize}
 
 \hypertarget{rd-party-insurance-minimum}{%
 \section{\texorpdfstring{3\textsuperscript{rd} Party Insurance Minimum}{3rd Party Insurance Minimum}}\label{rd-party-insurance-minimum}}
@@ -2361,6 +2368,63 @@ A short list of Frequently Asked Questions for end-users can be found at: \url{h
   \textbf{What will the \protect\hyperlink{AB}{UAS Advisory Board} discuss?}
 
   The \protect\hyperlink{AB}{UAS Advisory Board} is expected to review the performance of the Policy and make recommendations for policy refinement and improvement. It may be tasked to generate a report on the status and use of UAS in the UC, address challenges related to new regulations on overflight of people or on the use of UAS delivery services to, from and within the UC. As UAS technology and regulations change, the \protect\hyperlink{AB}{UAS Advisory Board} is intended to provide a steering guide to keep the UC compliant and competitive.
+\end{itemize}
+
+\hypertarget{ch-cybersecurity}{%
+\chapter{Cybersecurity Concerns}\label{ch-cybersecurity}}
+
+The use of an unmanned aircraft system (UAS) designed, manufactured, or supplied by foreign companies could create increased cybersecurity risks and opportunities for network exploitation and collection by foreign threat actors.
+
+\hypertarget{cybersecurity-risk}{%
+\section{Cybersecurity Risk}\label{cybersecurity-risk}}
+
+Potential security risks can arise when UAS manufacturers require users to register online and agree to store sensitive data on overseas or even domestic computer servers. These servers are typically maintained by the manufacturers, but can be accessed by third-party application vendors. In addition, online services offered by UAS manufacturers could create opportunities for the theft or seizure of sensitive information and the monitoring of user activities. Foreign threat actors could exploit:
+
+\begin{itemize}
+\tightlist
+\item
+  Flight log data, including information about network layouts and the locations of inspections and critical assets;
+\item
+  Organizations' computer network data and systems;
+\item
+  Images or recordings captured during flights, including physical security assets, vulnerabilities, and transportation networks;
+\item
+  Corporate proprietary information or intellectual property;
+\item
+  LE-sensitive information;
+\item
+  Sensor data collected during critical infrastructure inspections;
+\item
+  Emergency response operations and mission-planning information;
+\item
+  Sensitive facility locations and assets; and
+\item
+  Customers' personally identifiable information (PII).
+\end{itemize}
+
+\hypertarget{mitigation-strategies}{%
+\section{Mitigation Strategies}\label{mitigation-strategies}}
+
+Here are a couple of suggestions to reduce the potential data risks and vulnerabilities associated with UAS use and mitigate the loss of sensitive information.
+
+\begin{itemize}
+\tightlist
+\item
+  During initial UAS activation, use a department or lab name, email address, and password to reduce a UAS manufacturer's ability to track the owner/user through association with this identifier. Note: It should be assumed that the current GPS location will be transmitted during UAS activation, which could reveal the true owner.
+\item
+  Use a new mobile device without a SIM card installed or set up previously and never used for other activities for that will contain limited to no PII collectable by a foreign UAS company. For previously used devices, performing a wipe and factory reset of the mobile device prior to using it as a controller is advisable.
+\item
+  Periodically wipe or clear sensitive data from the system, including information stored on onboard or removable digital storage devices---such as SD and memory cards---and on connected flight controllers and mobile devices. Sensitive data should also be cleared before returning borrowed or rented UASs.
+\item
+  Avoid connecting the UAS to internal or private networks with sensitive data. Use a known secured network to register the UAS, and use a local backup device to store footage and data.
+\item
+  Before applying UAS patches and upgrades, consider their impact on operations.
+\item
+  Review user agreements to verify who has access to data collected by the UAS.
+\item
+  Inquire or review user agreements for information about third-party access to UAS data.
+\item
+  Maintain awareness of third-party collection and retention of data collected during UAS operations and develop appropriate policies to ensure the protection of intellectual property and sensitive operations.
 \end{itemize}
 
 \hypertarget{ch-risk-score}{%
@@ -3691,7 +3755,7 @@ The term \protect\hyperlink{LiPo}{LiPo} refers to the regular use Lithium Polyme
 \subsubsection*{Location Specific Policy or Procedure}\label{LSP}}
 \addcontentsline{toc}{subsubsection}{Location Specific Policy or Procedure}
 
-The term \protect\hyperlink{LSP}{location specific policy or procedure} means a policy or procedure, or a set of policies or procedures, established at a \protect\hyperlink{UL}{University Location}. The policy or procedure must include a review as described in Chapter \ref{ch-review}, but may be flexible to address a diverse set of \protect\hyperlink{UASactivity}{UAS activity}.
+The term \protect\hyperlink{LSP}{location specific policy or procedure} means a policy or procedure, or a set of policies or procedures, established at a \protect\hyperlink{UL}{University Location}. The policy or procedure must include a review as described in the UC UAS Policy Guidance Document, but may be flexible to address a diverse set of \protect\hyperlink{UASactivity}{UAS activity}.
 
 
 
@@ -3793,7 +3857,7 @@ The term \protect\hyperlink{SDA}{Systemwide Designated UAS Authority} refers to 
 \subsubsection*{UAS Post-Flight Report}\label{postflight}}
 \addcontentsline{toc}{subsubsection}{UAS Post-Flight Report}
 
-The term \protect\hyperlink{postflight}{UAS Post-Flight Report} refers to a documented submission of a record of \protect\hyperlink{UASactivity}{UAS activity}. More information on \protect\hyperlink{postflight}{Post-Flight Reports} can be found in Chapter \ref{ch-reporting}.
+The term \protect\hyperlink{postflight}{UAS Post-Flight Report} refers to a documented submission of a record of \protect\hyperlink{UASactivity}{UAS activity}. More information on \protect\hyperlink{postflight}{Post-Flight Reports} can be found in the UC UAS Policy Guidance Document.
 
 
 
@@ -3805,7 +3869,7 @@ The term \protect\hyperlink{postflight}{UAS Post-Flight Report} refers to a docu
 \subsubsection*{UAS Request Form}\label{FR}}
 \addcontentsline{toc}{subsubsection}{UAS Request Form}
 
-The term \protect\hyperlink{FR}{UAS Request Form} or \protect\hyperlink{FR}{Flight Request} refers to a documented request to operate a UAS pursuant to this Policy. The Policy does not mandate a specific form or system as long as the minimum review criteria is met. See Chapter \ref{ch-review} for further details.
+The term \protect\hyperlink{FR}{UAS Request Form} or \protect\hyperlink{FR}{Flight Request} refers to a documented request to operate a UAS pursuant to this Policy. The Policy does not mandate a specific form or system as long as the minimum review criteria is met. See \protect\hyperlink{UASPGD}{UC UAS Policy Guidance Document} for further details.
 
 
 
@@ -3824,6 +3888,14 @@ UC Drones is an online application developed by UC Risk and Safety Solutions tha
 \addcontentsline{toc}{subsubsection}{UC Agriculture and Natural Resources}
 
 The \protect\hyperlink{ANR}{UC Division of Agriculture and Natural Resources} (UC ANR) is a division of the University of California system that connects the power of UC research in agriculture, natural resources, nutrition, and youth development with local communities. UC ANR statewide programs includes 4-H, Cooperative Extensions, Master Gardener Program, and includes a system of Research and Extension Centers across California.
+
+
+
+\hypertarget{UASPGD}{%
+\subsubsection*{UC UAS Policy Guidance Document}\label{UASPGD}}
+\addcontentsline{toc}{subsubsection}{UC UAS Policy Guidance Document}
+
+The \protect\hyperlink{UASPGD}{UC UAS Policy Guidance Document} is a supplementary guidance document to help with the implementation of the UC's UAS Policy. It contains information regarding how to review UAS activity, safety guidance and other resources. It can be found at \url{http://ucdrones.github.io/Policy_Guidance}.
 
 
 
