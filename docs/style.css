@@ -27,7 +27,7 @@ pre code {
   padding: 5px;
 }
 
-.content-box .title {
+.content-box .titleB {
   background: var(--color-primary-dark);
   font-weight: bold;
   display: block;

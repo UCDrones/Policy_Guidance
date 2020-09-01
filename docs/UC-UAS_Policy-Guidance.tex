@@ -131,12 +131,14 @@
      #1,
 }
 \newenvironment{titlet}{\bfseries}{\hline}
+\newenvironment{content}{\hrulefill}{}{}
+\newenvironment{titleB}{}{}
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{UC UAS Policy Guidance Document}
 \author{Dr.~Brandon Stark, University of California}
-\date{2020-07-14}
+\date{2020-09-01}
 
 \begin{document}
 \maketitle
@@ -992,7 +994,7 @@ Example language that may be used in Terms of Approval can be found in Chapter \
 \hypertarget{ch-reporting}{%
 \chapter{UAS Activity Reporting}\label{ch-reporting}}
 
-The (ref:uaspostlight) of \protect\hyperlink{UASactivity}{UAS activity} is an important aspect of oversight, management and the development of future policies and procedures. The Policy mandates that post-flight reporting must be accomplished but does not specify details regarding the frequency or specific information requirements. This section provides guidance on establishing a successful reporting system.
+The \protect\hyperlink{postflight}{UAS Post-Flight Report} of \protect\hyperlink{UASactivity}{UAS activity} is an important aspect of oversight, management and the development of future policies and procedures. The Policy mandates that post-flight reporting must be accomplished but does not specify details regarding the frequency or specific information requirements. This section provides guidance on establishing a successful reporting system.
 
 All reporting must meet or exceed compliance with all applicable regulations and policies. Currently, the UC has 5 UAS specific reporting compliance obligations. The UC additionally has other reporting compliance obligations related to workplace safety and accident reporting.
 
@@ -1363,7 +1365,7 @@ Any \protect\hyperlink{UASactivity}{UAS activity} that is not approved by a \pro
 \hypertarget{ss-personally-owned-UAS-coverage}{%
 \subsection{Personally Owned Unmanned Aircraft Used for University Business}\label{ss-personally-owned-UAS-coverage}}
 
-The University of California has extended their UAS liability policy to enable coverage of UAS owned by UC students, staff or faculty used for \protect\hyperlink{UB}{University Business}, including research. Coverage in contingent on compliance with the policy and procedures on UAS usage. This coverage is not intended to cover student organizations or (ref:3rdParty) vendors or contractors.
+The University of California has extended their UAS liability policy to enable coverage of UAS owned by UC students, staff or faculty used for \protect\hyperlink{UB}{University Business}, including research. Coverage in contingent on compliance with the policy and procedures on UAS usage. This coverage is not intended to cover student organizations or \protect\hyperlink{rdparty}{3\textsuperscript{rd} Party} vendors or contractors.
 
 \hypertarget{ss-campus-police-coverage}{%
 \subsection{Coverage for Campus Police}\label{ss-campus-police-coverage}}
@@ -1741,7 +1743,7 @@ There are advantages and disadvantages to both scenarios. In many cases, the new
 
 \textbf{What are some of the airspace restrictions of `Recreational Operations'?}
 
-Under `Recreational Operations,' \protect\hyperlink{RPIC}{RPICs} must obtain \protect\hyperlink{AA}{Airspace Authorization} similar to 14 CFR 107 operators either through (ref:LAANC) or (ref:DroneZone). However, unlike 14 CFR 107 operators, recreational RPICs are prohibited from requesting airspace altitudes that exceed the published altitude limit in the FAA's (ref:facility\_map). For example, at UC Santa Barbara, the Facility Map lists an allowable altitude of 0 ft AGL (effectively no flying) over the majority of campus. A licensed \protect\hyperlink{RPIC}{RPIC} operating under 14 CFR 107 may request and be granted special authorization to fly up to 100 ft AGL. However, an unlicensed \protect\hyperlink{RPIC}{RPIC} recreational operator would be prohibited from flying at all in the same location.
+Under `Recreational Operations,' \protect\hyperlink{RPIC}{RPICs} must obtain \protect\hyperlink{AA}{Airspace Authorization} similar to 14 CFR 107 operators either through \protect\hyperlink{LAANC}{LAANC} or DroneZone. However, unlike 14 CFR 107 operators, recreational RPICs are prohibited from requesting airspace altitudes that exceed the published altitude limit in the FAA's Facility Map. For example, at UC Santa Barbara, the Facility Map lists an allowable altitude of 0 ft AGL (effectively no flying) over the majority of campus. A licensed \protect\hyperlink{RPIC}{RPIC} operating under 14 CFR 107 may request and be granted special authorization to fly up to 100 ft AGL. However, an unlicensed \protect\hyperlink{RPIC}{RPIC} recreational operator would be prohibited from flying at all in the same location.
 
 \textbf{What will the new Aeronautical Knowledge and Safety Test be like? How much will it cost?}
 
@@ -2314,13 +2316,19 @@ A short list of Frequently Asked Questions for end-users can be found at: \url{h
 \hypertarget{ch-risk-score}{%
 \chapter{Risk Scoring for UC UAS activity}\label{ch-risk-score}}
 
-This \protect\hyperlink{riskscore}{Risk Score} has been developed to gauge the level of risk and and recommend requirements to enable the proposed \protect\hyperlink{UASactivity}{UAS activity}. These are recommendations and guidelines, rather than strict requirements - please utilize your best judgement.
+This \protect\hyperlink{riskscore}{Risk Score} has been developed to gauge the level of risk and and recommend requirements to enable the proposed \protect\hyperlink{UASactivity}{UAS activity}. These are recommendations and guidelines, rather than strict requirements - please utilize your best judgment.
 
 \textbf{Instructions:} Select the Risk Score that best matches the proposed. Significant variation of descriptions may indicate further information or modification to activity is required.
 
 \begin{content-box}{green}
 
+\begin{titleB}
+
 \textbf{Risk Level 1 - Minor Risk}
+
+\end{titleB}
+
+\begin{content}
 
 \textbf{Description:} Generally safe activity. UAS activity in an access controlled area with no airspace issues or hazards. RPIC has sufficient experience and the UAS is in working condition.
 
@@ -2338,11 +2346,19 @@ This \protect\hyperlink{riskscore}{Risk Score} has been developed to gauge the l
 
 \textbf{Recommend Safety Requirements:} No additional requirements.
 
+\end{content}
+
 \end{content-box}
 
 \begin{content-box}{olive}
 
+\begin{titleB}
+
 \textbf{Risk Level 2 - Low Risk}
+
+\end{titleB}
+
+\begin{content}
 
 \textbf{Description:} Some risks to location or property, but significant damage is remote or unlikely. In general, most flight activity would be Risk Level 2 unless the conditions for Risk Level 1 are met.
 
@@ -2360,11 +2376,19 @@ This \protect\hyperlink{riskscore}{Risk Score} has been developed to gauge the l
 
 \textbf{Recommend Safety Requirements:} No additional requirements.
 
+\end{content}
+
 \end{content-box}
 
 \begin{content-box}{yellow}
 
+\begin{titleB}
+
 \textbf{Risk Level 3 - Escalated Risk}
+
+\end{titleB}
+
+\begin{content}
 
 \textbf{Description:} Some risks to non-participants or other hazards, with some possibility of significant damage.
 
@@ -2382,11 +2406,19 @@ This \protect\hyperlink{riskscore}{Risk Score} has been developed to gauge the l
 
 \textbf{Recommend Safety Requirements:} Visual observers are generally required for Risk Level 3 and above. May require the use of high-visibility reflective vests and/or communication protocols. May require a crowd safety plan.
 
+\end{content}
+
 \end{content-box}
 
 \begin{content-box}{orange}
 
+\begin{titleB}
+
 \textbf{Risk Level 4 - Moderate Risk}
+
+\end{titleB}
+
+\begin{content}
 
 \textbf{Description:} Poses risks to others and sensitive property. Significant hazards with potentially catastrophic results, including privacy or legal issues.
 
@@ -2404,11 +2436,19 @@ This \protect\hyperlink{riskscore}{Risk Score} has been developed to gauge the l
 
 \textbf{Recommend Safety Requirements:} Visual observers and additional ground support crew may be necessary. Documented safety plans should be comprehensive to address a multitude of potential scenarios.
 
+\end{content}
+
 \end{content-box}
 
 \begin{content-box}{red}
 
+\begin{titleB}
+
 \textbf{Risk Level 5 - High Risk}
+
+\end{titleB}
+
+\begin{content}
 
 \textbf{Description:} Significant risks are involved and may require special exemptions and authorizations for safety issues from the FAA or other regulatory agencies.
 
@@ -2425,6 +2465,8 @@ This \protect\hyperlink{riskscore}{Risk Score} has been developed to gauge the l
 \textbf{Airspace:} May include airspace with special restrictions.
 
 \textbf{Recommend Safety Requirements:} Significant safety planning will be necessary.
+
+\end{content}
 
 \end{content-box}
 
@@ -3400,9 +3442,15 @@ Reprinted from \protect\hyperlink{AMA}{Academy of Model Aeronautics} Safety Code
 
 \begin{content-box}{green}
 
+\begin{titleB}
+
 \textbf{Academy of Model Aeronautics}\\
 National Model Aircraft Safety Code\\
 Effective January 1, 2018
+
+\end{titleB}
+
+\begin{content}
 
 A model aircraft is a non-human-carrying device capable of sustained flight within visual line of sight of the pilot or spotter(s). It may not exceed limitations of this code and is intended exclusively for sport, recreation, education and/or competition. All model flights must be conducted in accordance with this safety code and related AMA guidelines, any additional rules specific to the flying site, as well as all applicable laws and regulations.
 As an AMA member I agree:
@@ -3430,6 +3478,8 @@ As an AMA member I agree:
 \item
   I will use an established safety line to separate all model aircraft operations from spectators and bystanders.
 \end{itemize}
+
+\end{content}
 
 \end{content-box}
 
@@ -3468,7 +3518,7 @@ An aircraft is defined as a device that is used or intended to be used for fligh
 \subsubsection*{Airspace Authorization}\label{AA}}
 \addcontentsline{toc}{subsubsection}{Airspace Authorization}
 
-The term \protect\hyperlink{AA}{Airspace Authorization} means a short term or temporary authorization granted by the \protect\hyperlink{FAA}{FAA} to a specific organization or person to operate within controlled airspace. An `Airspace Authorization' may be granted with a \protect\hyperlink{COA}{COA} or through (ref:LAANC).
+The term \protect\hyperlink{AA}{Airspace Authorization} means a short term or temporary authorization granted by the \protect\hyperlink{FAA}{FAA} to a specific organization or person to operate within controlled airspace. An `Airspace Authorization' may be granted with a \protect\hyperlink{COA}{COA} or through \protect\hyperlink{LAANC}{LAANC}.
 
 
 
@@ -3555,6 +3605,14 @@ The \protect\hyperlink{EO}{Executive Officer} means any of the University of Cal
 The \protect\hyperlink{FAA}{Federal Aviation Administration} is a division of the United States Department of Transportation that inspects and rates civilian aircraft and pilots, enforces the rules of air safety, and installs and maintains air-navigation and traffic-control facilities.
 
 
+
+
+
+\hypertarget{LAANC}{%
+\subsubsection*{Low Altitude Authorization and Notification Capability}\label{LAANC}}
+\addcontentsline{toc}{subsubsection}{Low Altitude Authorization and Notification Capability}
+
+The term LAANC refers to the Low Altitude Authorization and Notification Capability, a collaboration between FAA and Industry. It directly supports UAS integration into the airspace. LAANC provides: Drone pilots with access to controlled airspace at or below 400 feet, Awareness of where pilots can and cannot fly and Air Traffic Professionals with visibility into where and when drones are operating.
 
 
 
